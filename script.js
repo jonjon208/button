@@ -1,7 +1,7 @@
 const soundSources = [
-  'sound1.mp3',
-  'sound2.mp3',
-  'sound3.mp3'
+  'sound1.mp4',
+  'sound2.mp4',
+  'sound3.mp4'
 ];
 
 const audioPlayer = document.getElementById('audioPlayer');
