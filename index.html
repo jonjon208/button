@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Sound Player</title>
+  <style>
+    .container {
+      text-align: center;
+      margin-top: 100px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="playButton">Play Random Sound</button>
+  </div>
+
+  <script>
+    var sounds = [
+      'sound1.mp3',
+      'sound2.mp3',
+      'sound3.mp3'
+      // Add more sound file names here
+    ];
+
+    function playRandomSound() {
+      var randomIndex = Math.floor(Math.random() * sounds.length);
+      var audio = new Audio(sounds[randomIndex]);
+      audio.play();
+    }
+
+    document.getElementById('playButton').addEventListener('click', playRandomSound);
+  </script>
+</body>
+</html>
